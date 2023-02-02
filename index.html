@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
+  padding: 0;
   overflow: hidden;
   background-color: #333;
+  box-sizing: border-box;
 }
 
 .navbar a {
+  margin: 0;
   float: left;
   font-size: 16px;
   color: white;
@@ -68,6 +73,21 @@ body {
   display: block;
 }
 </style>
+
+<script>
+  var userAgent = navigator.userAgent;
+  if (userAgent.indexOf("Chrome") != -1) {
+    window.location.href = "index.html";
+  } else if (userAgent.indexOf("Firefox") != -1) {
+    window.location.href = "index.html";
+  } else if (userAgent.indexOf("edge") != -1) {
+    window.location.href = "index.html";
+  } else {
+    window.location.href = "mobile.html";
+  }
+</script>
+
+
 </head>
 <body>
 
@@ -83,9 +103,10 @@ body {
       <a href="#">How to contact us</a>
     </div>
   </div> 
+
 </div>
 
-<iframe src="https://wey2shop.github.io/Skillsharemap/map.html" style="position:absolute; top:50px; left:0px; width:100%; height:calc(100% - 50px); border: none; overflow: hidden;"></iframe>
+<iframe src="https://wey2shop.github.io/Skillsharemap/map.html" style="position:absolute; top:auto - 50px; left:0px; width:100%; height:calc(100% - 50px); border: none; overflow: hidden;"></iframe>
 
 
 </body>
